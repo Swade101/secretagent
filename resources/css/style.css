@@ -148,7 +148,7 @@ body {
 
 .pen,
 .watch,
-.one {
+.glasses {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,4 +200,28 @@ footer {
   align-content: center;
   height: 5rem;
   width: 960px;
+}
+
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  .bannertext {
+    margin-top: 10rem;
+  }
+
+  .new {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .sport {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .navs {
+    margin-top: 15rem;
+  }
 }
