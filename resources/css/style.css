@@ -75,7 +75,7 @@ body {
 .bannertext {
   display: flex;
   flex-direction: column;
-  align-content: cente;
+  align-content: center;
   width: 25rem;
   margin-top: 9rem;
   background-color: black;
@@ -206,7 +206,41 @@ footer {
   width: 960px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 420px) {
+@media only screen and (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .mobiletext {
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  }
+
+  .navigation p {
+    display: none;
+  }
+
+  .productgrid {
+    justify-content: space-around;
+  }
+
+  .glasses {
+      display: none;
+    }
+
+    .bottomcontainer {
+      justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 470px) {
   html {
     overflow-x: hidden;
   }
@@ -216,36 +250,56 @@ footer {
   }
 
   .logo {
-    align-items: center;
+    justify-content: center;
   }
 
-  .banner {
+  .logotext {
+    display: none;
+  }
 
+  .mainbanner {
+    text-align: left;
+    height: 15rem;
+  }
+
+  .textcontainer {
+    align-items: center;
+    justify-content: cover;
+    width: 470px;
+    margin-top: 10rem;
   }
 
   .bannertext {
     display: flex;
+    flex-flow: column wrap;
     width: 100%;
     margin-top: 10rem;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
   }
 
-  .arrival {
-
-  }
 
   .new {
     font-family: Helvetica;
     font-size: 0.77rem;
     font-weight: bold;
-    padding-bottom: 5px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem
+  }
+
+  .new p {
+    margin-left: 2rem;
   }
 
   .sport {
     font-family: Helvetica;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .sport p {
+    margin-left: 2rem;
   }
 
   .navs {
@@ -253,6 +307,7 @@ footer {
     text-align: center;
     justify-content: center;
     align-content: center;
+    margin-top: 5rem;
   }
 
   .mobiletext {
@@ -286,11 +341,16 @@ footer {
     align-items: center;
     align-content: center;
     justify-content: center;
-    width: 420px;
+    width: 470px;
   }
 
 .location {
   margin-bottom: 2rem;
+  width: 50%;
+}
+
+.hours {
+  width: 50%;
 }
 
   footer {
