@@ -49,7 +49,6 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-
 }
 
 .mainbanner {
@@ -62,6 +61,7 @@ body {
   width: 100%;
   color: white;
   background-image: url("../images/mainbanner.jpeg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -75,7 +75,7 @@ body {
 .bannertext {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-content: cente;
   width: 25rem;
   margin-top: 9rem;
   background-color: black;
@@ -101,6 +101,10 @@ body {
 .navs {
   width: 100%;
   background-color: firebrick;
+}
+
+.mobiletext {
+  display: none;
 }
 
 .navigation {
@@ -202,42 +206,102 @@ footer {
   width: 960px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1000px) {
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  html {
+    overflow-x: hidden;
+  }
+
   body {
-    width: 420px;
+    width: 100%;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .banner {
+
   }
 
   .bannertext {
+    display: flex;
+    width: 100%;
     margin-top: 10rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .arrival {
+
   }
 
   .new {
     font-family: Helvetica;
     font-size: 0.77rem;
     font-weight: bold;
-    margin-left: 2rem;
+    padding-bottom: 5px;
   }
 
   .sport {
     font-family: Helvetica;
     font-size: 1rem;
     font-weight: bold;
-    margin-left: 2rem;
   }
 
   .navs {
-    margin-top: 15rem;
+    width: 420px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
   }
 
-  .pen {
-    width: 100%
+  .mobiletext {
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  }
+
+  .navigation p {
+    display: none;
+  }
+
+  .productgrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .glasses {
+    display: none;
   }
 
   .bottomcontainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
-    width: 480px;
+    width: 420px;
+  }
+
+.location {
+  margin-bottom: 2rem;
+}
+
+  footer {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
   }
 }
