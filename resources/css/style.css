@@ -202,7 +202,11 @@ footer {
   width: 960px;
 }
 
-@media only screen and (max-width: 420px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  body {
+    width: 420px;
+  }
+
   .bannertext {
     margin-top: 10rem;
   }
@@ -223,5 +227,17 @@ footer {
 
   .navs {
     margin-top: 15rem;
+  }
+
+  .pen {
+    width: 100%
+  }
+
+  .bottomcontainer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 480px;
   }
 }
